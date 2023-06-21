@@ -80,4 +80,59 @@ nav ul li a:hover {
   nav ul {
     display: none;
   }
+  .intro {
+    flex-direction: column;
+  }
+  .planting-illustration {
+    margin-top: 50px;
+    
+  }
+}
+
+/* Main */
+
+/* Intro Section */
+
+.intro {
+  margin: 50px 100px 100px 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro-words {
+  display: flex;
+  margin-right: 150px;
+  flex-direction: column;
+}
+
+.greeting {
+  font-size: 3em;
+  color: #68AD7C;
+  margin-bottom: 10px;
+}
+
+.intro-desc {
+  font-size: 1em;
+}
+
+.planting-illustration {
+  display: flex;
+  width: 40%;
+}
+
+/* Activity Section */
+
+.activity-container {
+  background-color: #38cca2;
+  color: white;
+  text-align: center;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.activity-photo {
+  width: 200px;
 }
