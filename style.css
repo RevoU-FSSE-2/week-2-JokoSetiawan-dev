@@ -21,6 +21,9 @@ nav {
   justify-content: space-around;
   padding: 20px 0;
   align-items: center;
+  position: sticky;
+  top: 0;
+
 }
 
 nav ul {
@@ -58,19 +61,28 @@ nav ul li a:hover {
 
 /* Responsive Breakpoint */
 
-/* Laptop */
-@media screen and (max-width: 1024px) {
-  nav ul {
-    width: 40%;
-  }
-}
-
 /* Tablet */
 @media screen and (max-width: 768px) {
-  nav ul {
-    width: 50%;
+  nav {
+    display: flex;
+    justify-content: space-around;
   }
-}
+  nav ul {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .planting-illustration {
+    width: 60%;
+  }
+  .intro {
+    padding-top: 50px;
+  }
+  }
+  .activity-container{
+    margin-top: 160px;
+  }
 
 /* Mobile */
 @media screen and (max-width: 576px) {
@@ -82,10 +94,10 @@ nav ul li a:hover {
   }
   .intro {
     flex-direction: column;
+    padding-top: 10px;
   }
   .planting-illustration {
-    margin-top: 50px;
-    
+    padding-top: 50px;
   }
 }
 
@@ -98,6 +110,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 45px;
 }
 
 .intro-words {
@@ -107,9 +120,8 @@ nav ul li a:hover {
 }
 
 .greeting {
-  font-size: 3em;
+  font-size: 2em;
   color: #68AD7C;
-  margin-bottom: 10px;
 }
 
 .intro-desc {
@@ -117,8 +129,7 @@ nav ul li a:hover {
 }
 
 .planting-illustration {
-  display: flex;
-  width: 40%;
+  width: 60%;
 }
 
 /* Activity Section */
@@ -127,12 +138,20 @@ nav ul li a:hover {
   background-color: #38cca2;
   color: white;
   text-align: center;
-  height: 350px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.activity {
+  font-size: 1.5em;
+  padding-top: 10px;
 }
 
 .activity-photo {
-  width: 200px;
+  margin-top: 25px;
+  width: 20%;
+  border-radius: 10%;
 }
